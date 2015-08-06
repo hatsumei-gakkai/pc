@@ -1,0 +1,478 @@
+@charset "utf-8";
+/* CSS Document */
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-style:normal;
+    font-weight: normal;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+.clearfix:after {
+    content: "."; 
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;}
+.clearfix {min-height: 1px;}
+#wrapper2 a:visited { color: #333;}
+#wrapper2 a:link { color: #333;}
+ 
+* html .clearfix {
+    height: 1px;
+    /*¥*//*/
+    height: auto;
+    overflow: hidden;
+    /**/} 
+.both{clear:both;}
+.inline_block {display: inline-block;  
+    *display: inline;  
+    *zoom: 1;}
+/*common*/
+/*--margin set--*/
+.mgtop5 {margin-top:5px;}
+.mgtop10{margin-top:10px;}
+.mgtop15{margin-top:15px;}
+.mgtop20{margin-top:20px;}
+.mgtop25{margin-top:25px;}
+.mgtop30{margin-top:30px;}
+.mgtop35{margin-top:35px;}
+.mgtop40{margin-top:40px;}
+.mgbtm5 {margin-bottom:5px;}
+.mgbtm10{margin-bottom:10px;}
+.mgbtm15{margin-bottom:15px;}
+.mgbtm20{margin-bottom:20px;}
+.mgbtm25{margin-bottom:25px;}
+.mgbtm30{margin-bottom:30px;}
+.mgbtm35{margin-bottom:35px;}
+.mgbtm40{margin-bottom:40px;}
+.mgleft5 {margin-left:5px;}
+.mgleft10{margin-left:10px;}
+.mgleft15{margin-left:15px;}
+.mgleft20{margin-left:20px;}
+.mgleft25{margin-left:25px;}
+.mgleft30{margin-left:30px;}
+.mgright5 {margin-right:5px;}
+.mgright10{margin-right:10px;}
+.mgright15{margin-right:15px;}
+.mgright20{margin-right:20px;}
+.mgright25{margin-right:25px;}
+.mgright30{margin-right:30px;}
+/*--padding set--*/
+.padtop5 {padding-top:5px;}
+.padtop10{padding-top:10px;}
+.padtop15{padding-top:15px;}
+.padtop20{padding-top:20px;}
+.padtop25{padding-top:25px;}
+.padtop30{padding-top:30px;}
+.padtop35{padding-top:35px;}
+.padtop40{padding-top:40px;}
+.padbtm5 {padding-bottom:5px;}
+.padbtm10{padding-bottom:10px;}
+.padbtm15{padding-bottom:15px;}
+.padbtm20{padding-bottom:20px;}
+.padbtm25{padding-bottom:25px;}
+.padbtm30{padding-bottom:30px;}
+.padbtm35{padding-bottom:35px;}
+.padbtm40{padding-bottom:40px;}
+.padleft5 {padding-left:5px;}
+.padleft10{padding-left:10px;}
+.padleft15{padding-left:15px;}
+.padleft20{padding-left:20px;}
+.padleft25{padding-left:25px;}
+.padleft30{padding-left:30px;}
+.padright5 {padding-right:5px;}
+.padright10{padding-right:10px;}
+.padright15{padding-right:15px;}
+.padright20{padding-right:20px;}
+.padright25{padding-right:25px;}
+.padright30{padding-right:30px;}
+
+/*--font size--*/
+.fs_88{font-size: 88%;}
+.fs_90{font-size: 90%;}
+.fs_92{font-size: 92%;}
+.fs_94{font-size: 94%;}
+.fs_96{font-size: 96%;}
+.fs_98{font-size: 98%;}
+.fs_100{font-size: 100%;}
+.fs_105{font-size: 105%;}
+.fs_110{font-size: 110%;}
+.fs_120{font-size: 120%;}
+.fs_130{font-size: 130%;}
+.fs_140{font-size: 140%;}
+.fs_150{font-size: 150%;}
+
+/*--font weight--*/
+.fw_b{font-weight: bold;}
+
+/*--font color--*/
+.ex_red{color:#FF0004;}
+
+/*0504*/
+.body {background-color: #ffffff; width:100%;}
+#wrapper {text-align: left;
+	width: 1000px;
+	margin: 0 auto;
+	padding:0;}
+#header{border-bottom:1px solid #999; padding-bottom:5px; overflow:hidden; margin-top:5px; margin-bottom:15px;}
+#promo_word {font-weight: lighter;
+	z-index: 10;
+	font-size:75%;
+	color: #333;
+	float:left;
+	width:580px;}
+#submenu{width:410px; font-size:78%; float:right;}
+#submenu a{text-decoration:none;}
+#main{overflow:hidden; margin-bottom:15px;}
+#main #logo{float:left; margin-left:5px;}
+#main  #main_lead{float:right; font-weight:900; font-size:104%;}
+
+.search_point{width:990px; margin:0 auto; background-color:#333; height: 50px;}
+.input_txt{width:480px; float:left; padding:10px;} 
+.text{width:470px; height:24px;}
+.input_submit{margin-top:15px;
+	font-weight: normal;
+	cursor: pointer;
+	float:left;}
+
+#menu{width:1000px; clear:both; display:block; height:45px;}
+#menu ul{font-size:90%; display:block; width:990px; margin:0 auto; height:45px;}
+#menu li{display:block; width:198px; float:left;}
+#menu li a{text-decoration:none; display:block; width:198px; height:30px; padding-top:15px; text-align:center; background-color:#efefef;}
+#menu li a:hover {
+	background-color: #333;
+	width:198px;
+	display:block;
+	height:30px; 
+	padding-top:15px;
+	color:#FFFFFF;}
+#carou{width:990px; height:330px; margin:10px auto 20px; background-color:#efefef;}
+#carou_contents{width:860px; height:280px; margin:0 auto;padding-top:16px;}
+#carou_contents img{width:860px; height:280px;}
+
+
+div#error{min-width: 1000px;
+	width: 100%;
+	height: auto;
+	position: relative;}
+* {
+	zoom: 1;
+	margin: 0px;
+	padding: 0px;
+	scrollbar-base-color: #ffffff;
+	scrollbar-face-color: #dddddd;
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #ffffff;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-shadow-color: #ffffff;
+	scrollbar-3dlight-color: #dddddd;
+	scrollbar-darkshadow-color: #dddddd;
+	font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+}
+h1, h2, h3, h4, h5, h6 {font-size: 8pt; font-weight: lighter;}
+img {
+	-ms-interpolation-mode: bicubic;
+	border: none;
+	vertical-align: bottom;
+}
+hr {border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;}
+fieldset {padding: 3px;
+	text-align: left;}
+legend {padding: 3px; text-align: left;}
+
+/* ------------------------------------- 
+リンクの色設定（初級モードで設定）
+ ------------------------------------- */
+a:link {color: #6D6D6D;
+	text-decoration: underline;}
+a:visited {color: #6D6D6D;
+	text-decoration: underline;}
+a:active {color: #FE6FA1;
+	text-decoration: underline;}
+a:hover img {opacity: 0.7; filter: alpha(opacity=70);}
+div.header {
+	height: 149px;
+	width: 1000px;
+	text-align: left;
+	position: relative;
+	margin: auto;
+}
+li.header_menu {float: right;
+	margin-left: 16px;}
+/* ------------------------------------- 
+	メニュー
+ ------------------------------------- */
+div.menu {
+	position: absolute;
+	width: 1000px;
+	bottom: 0;
+	left: 0;
+	background: #FFFFFF;
+}
+div.menu ul {margin: 0; padding: 0;}
+div.menu ul li {
+	float: left;
+	list-style: none;
+	display: block;
+	text-align: center;
+}
+div.menu img {vertical-align: bottom;}
+/* ------------------------------------- 
+	左カラム
+ ------------------------------------- */
+#left_wrapper{width:180px; float:left; background-color:#333; margin:0 10px 35px 5px;}
+.left_contents{width:160px; margin: 0 auto;padding-top: 5px;}
+.example {background-color:#fff; margin: 5px 0 20px;}
+.example li{border-bottom: dotted #9f9f9f 1px; padding:5px 10px;}
+.example .last{border-bottom: none;}
+.left_menu a{text-decoration:none; font-size:88%; color:#0099aa;}
+.left_menu a:visited{text-decoration:none; font-size:88%; color:#0099aa;}
+.left_menu a:link{text-decoration:none; font-size:88%; color:#0099aa;}
+.cate_title a{color:#FFFFFF; font-weight:bold; text-align:center; display:block; margin-top:10px;}
+.cate_title a:visited{text-decoration:none; font-size:88%; color:#fff;}
+.cate_title a:link{text-decoration:none; font-size:88%; color:#fff;}
+
+
+
+/* ------------------------------------- 
+	右カラム
+ ------------------------------------- */
+#right_colum{width:770px; float:right; overflow:hidden; margin-bottom:60px; margin-right:5px;}
+#right_colum .item_detail{float:left; width:125px; margin-right:30px; font-size:8pt; line-height:13px;}
+#right_colum .item_detail_last{float:left; width:125px; margin-right:0; font-size:8pt; line-height:13px;}
+#introduce{margin-bottom:35px; background-image:url(http://shopping.c.yimg.jp/lib/hatsumei-net/store_bg.png); width:770px; height:204px;}
+#int_contain{width:560px; margin:0 auto auto 175px; padding-top:25px; font-size:94%;}
+#int_contain #title{padding-top:5px; font-size:112%; font-weight:bold; margin-bottom:10px; border-bottom:#999 dotted 1px;}
+#pickup_item #lead{background-image:url(http://shopping.c.yimg.jp/lib/hatsumei-net/pickup_lead.png); width:770px; height:30px; text-indent:-9999px; margin-bottom:15px;}
+#new_arrival #lead{background-image:url(http://shopping.c.yimg.jp/lib/hatsumei-net/newitem_lead.png); width:770px; height:30px; text-indent:-9999px; margin-bottom:15px;}
+
+/* ------------------------------------- 
+ヤフー側パーツ上書き
+ ------------------------------------- */
+/*mdStoreLink*/
+#main .mdStoreLink {font-size:80%;
+  width:500px;
+  margin: 15px 5px 5px;
+  float:right;
+  line-height: 20px;}
+#main .mdStoreLink .elNav {float: right; width: 440px; text-align:right;}
+#main .mdStoreLink .elNav .elFavorite a, #main .mdStoreLink .elNav .elFavorite span {
+  float: left;
+  margin-right: 15px;
+  padding-left: 20px;
+  background: url(http://i.yimg.jp/images/shp_front/pc/store/images/common/ico_favorite_01.gif) no-repeat 0 50%;}
+#CentItemList1{margin:10px 0 20px;}
+#CentCategoryList1{margin:10px 0 30px;}
+#CentItemList1 h2 {
+  margin: 0;
+  padding: 4px 10px;
+  font-size: larger;
+  text-align: left;
+  background-color: #333;
+  color: #fff;
+  width:96%;}
+#CentCategoryList1 h2 {
+  margin: 0;
+  padding:10px;
+  font-size: small;
+  text-align: left;
+  background-color: #333;
+  color: #fff;
+  width:98%;}
+#CentItemCaption1 h2{background-color:#333; color:#fff; font-size: 110%;} 
+#CentItemList1 {margin: 10px 0 20px;}
+#wrapper2 td{vertical-align:top;}
+#wrapper2 a:link{color:#333;}
+#wrapper2 a:visited{color:#333;}
+
+
+/*トップページ以外左カラムリンク色設定*/
+#wrapper2 .left_menu a{text-decoration:none; font-size:88%; color:#0099aa;}
+#wrapper2 .left_menu a:visited{text-decoration:none; font-size:88%; color:#0099aa;}
+#wrapper2 .left_menu a:link{text-decoration:none; font-size:88%; color:#0099aa;}
+#wrapper2 .cate_title a{color:#FFFFFF; font-weight:bold; text-align:center; display:block; margin-top:10px;}
+#wrapper2 .cate_title a:visited{text-decoration:none; font-size:88%; color:#fff;}
+#wrapper2 .cate_title a:link{text-decoration:none; font-size:88%; color:#fff;}
+
+#NaviCalendar1{margin: 10px 0 0 5px; clear: both; width: 180px;}
+
+
+
+/* ------------------------------------- 
+	slickを使用したカルーセルの設定
+ ------------------------------------- */
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('/hatsumei-net/fonts/slick.eot');
+    src: url('/hatsumei-net/fonts/slick.eot?#iefix') format('embedded-opentype'), url('/hatsumei-net/fonts/slick.woff') format('woff'), url('/hatsumei-net/fonts/slick.ttf') format('truetype'), url('/hatsumei-net/fonts/slick.svg#slick') format('svg');
+	
+	/*
+	src: url('http://shopping.geocities.jp/hatsumei-net/fonts/slick.eot');
+    src: url('http://shopping.geocities.jp/hatsumei-net/fonts/slick.eot?#iefix') format('embedded-opentype'), url('http://shopping.geocities.jp/hatsumei-net/fonts/slick.woff') format('woff'), url('http://shopping.geocities.jp/hatsumei-net/fonts/slick.ttf') format('truetype'), url('http://shopping.geocities.jp/hatsumei-net/fonts/slick.svg#slick') format('svg');
+	*/s
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    padding: 0;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{opacity: .25;}
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -45px;
+	width: 24px;
+	height:42px;
+	background-image:url("/hatsumei-net/images/left_arrow.png");
+}
+.slick-prev:hover {background-image:url("/hatsumei-net/images/left_arrow.png"); opacity: 0.7;}
+.slick-prev:active{background-image:url("/hatsumei-net/images/left_arrow.png"); opacity: 0.8;}
+.slick-prev:focus {background-image:url("/hatsumei-net/images/left_arrow.png");}
+.slick-prev:before { content: ''; }
+
+.slick-next{right: -45px;
+	width: 24px;
+	height:42px;
+	background-image:url("/hatsumei-net/images/right_arrow.png");}
+.slick-next:hover {background-image:url("/hatsumei-net/images/right_arrow.png"); opacity: 0.7;}
+.slick-next:active{background-image:url("/hatsumei-net/images/right_arrow.png"); opacity: 0.8;}
+.slick-next:focus {background-image:url("/hatsumei-net/images/right_arrow.png");}
+.slick-next:before{content: '';}
+
+/* Dots */
+.slick-slider{margin-bottom: 30px;}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -45px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+
+    list-style: none; text-align: center;}
+.slick-dots li{position: relative;	display: inline-block;
+	width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;cursor: pointer;}
+.slick-dots li button{font-size: 0;
+    line-height: 0;
+	display: block;
+	width: 20px;
+    height: 20px;
+    padding: 5px;
+	cursor: pointer;
+	color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{outline: none;}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{opacity: 1;}
+.slick-dots li button:before
+{font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+	opacity: .25;
+    color: black;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;}
+.slick-dots li.slick-active button:before{opacity: .75; color: black;}

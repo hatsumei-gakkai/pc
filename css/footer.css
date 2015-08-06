@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ------------------------------------- 
+	フッター
+ ------------------------------------- */
+.footer_attention{width:990px; color:#666666; line-height:19px; font-size:10pt !important; margin:10px auto; clear:both;}
+.foot_lead{font-weight:bold; font-size:105%; color:#444; margin-bottom:10px;}
+.footer_attention .footer_title{background-color:#333; color:#fff; font-weight:bold; font-size:110%; text-align:center; width:976px; margin:10px auto 15px; height:20px; padding:7px;} 
